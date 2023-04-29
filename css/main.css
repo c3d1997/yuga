@@ -466,7 +466,7 @@ footer {
 }
 .window__imgbox {
   margin-bottom: 30px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 @media (max-width: 940px) {
   .window__imgbox {
@@ -579,7 +579,7 @@ footer {
   }
 }
 .explain p {
-  line-height: 24px;
+  line-height: 32px;
 }
 .explain__left {
   width: 75%;
@@ -643,8 +643,12 @@ footer {
 .contact__left img {
   display: block;
   margin-bottom: 60px;
-  margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 940px) {
+  .contact__left img {
+    margin-left: auto;
+  }
 }
 .contact__left p:nth-child(3) {
   line-height: 20px;

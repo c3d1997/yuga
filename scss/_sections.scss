@@ -190,7 +190,7 @@
     }
     &__imgbox {
         margin-bottom: 30px;
-        margin-right: 20px;
+        margin-right: 10px;
         @include media-940 {
             width: 50%;
         }
@@ -294,7 +294,7 @@
     }
 
     p {
-        line-height: 24px;
+        line-height: 32px;
     }
     &__left {
         width: 75%;
@@ -351,8 +351,10 @@
         img {
             display: block;
             margin-bottom: 60px;
-            margin-left: auto;
             margin-right: auto;
+            @include media-940 {
+                margin-left: auto;
+            }
         }
         p:nth-child(3) {
             line-height: 20px;
