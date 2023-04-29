@@ -1,0 +1,53 @@
+.container-full {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0px;
+    margin: auto;
+}
+.container-paddingR {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0px;
+    margin: auto;
+    padding: 0 50px 0 200px;
+    @include media-1280 {
+        padding: 0 100px;
+    }
+    @include media-1024 {
+        padding: 0 60px;
+    }
+    @include media-768 {
+        padding: 0 30px;
+    }
+}
+
+.container {
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 200px;
+    @include media-1280 {
+        padding: 0 100px;
+    }
+    @include media-1024 {
+        padding: 0 60px;
+    }
+    @include media-768 {
+        padding: 0 30px;
+    }
+}
+section,
+footer {
+    background-color: $bg-green;
+}
+.text-g-d {
+    color: $text-green_dark;
+}
+.text-g-l {
+    color: $text-green_light;
+}
+
+.bg-white {
+    background-color: white;
+}
