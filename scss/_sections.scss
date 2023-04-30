@@ -64,14 +64,18 @@
     position: relative;
     padding-bottom: 210px;
     z-index: 2;
+    @include media-768 {
+        padding-bottom: 30px;
+    }
     &__bg {
         position: absolute;
         z-index: 0;
         top: 1000px;
         left: -1500px;
         @include media-425 {
-            left: -400px;
+            left: -600px;
             width: 200%;
+            top: 1200px;
         }
     }
     &__bg2 {
@@ -80,7 +84,8 @@
         top: 0;
         right: -1500px;
         @include media-425 {
-            right: -400px;
+            right: -600px;
+            top: 300px;
             width: 200%;
         }
     }
@@ -278,7 +283,7 @@
     img {
         object-fit: contain;
         @include media-768 {
-            transform: translateX(20%);
+            transform: translateX(10%);
         }
     }
 }

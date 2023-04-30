@@ -316,6 +316,11 @@ footer {
   padding-bottom: 210px;
   z-index: 2;
 }
+@media (max-width: 768px) {
+  .introduce {
+    padding-bottom: 30px;
+  }
+}
 .introduce__bg {
   position: absolute;
   z-index: 0;
@@ -324,8 +329,9 @@ footer {
 }
 @media (max-width: 425px) {
   .introduce__bg {
-    left: -400px;
+    left: -600px;
     width: 200%;
+    top: 1200px;
   }
 }
 .introduce__bg2 {
@@ -336,7 +342,8 @@ footer {
 }
 @media (max-width: 425px) {
   .introduce__bg2 {
-    right: -400px;
+    right: -600px;
+    top: 300px;
     width: 200%;
   }
 }
@@ -562,7 +569,7 @@ footer {
 }
 @media (max-width: 768px) {
   .kv_2 img {
-    transform: translateX(20%);
+    transform: translateX(10%);
   }
 }
 
