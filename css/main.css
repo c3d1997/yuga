@@ -680,8 +680,21 @@ footer {
   width: 100%;
 }
 .explain__right a {
-  color: #445744;
+  color: #86a686;
+  text-decoration: none;
   line-height: 32px;
+  transition: 0.5s;
+}
+@media (max-width: 768px) {
+  .explain__right a {
+    color: #445744;
+    line-height: 32px;
+    text-decoration: underline;
+  }
+}
+.explain__right a:hover {
+  color: #445744;
+  text-decoration: underline;
 }
 .explain__right p:nth-child(2) {
   margin-top: 48px;

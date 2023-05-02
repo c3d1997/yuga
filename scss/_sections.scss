@@ -349,8 +349,19 @@
     &__right {
         width: 100%;
         a {
-            color: $text-green_dark;
+            @include media-768 {
+                color: $text-green_dark;
+                line-height: 32px;
+                text-decoration: underline;
+            }
+            color: $text-green_light;
+            text-decoration: none;
             line-height: 32px;
+            transition: 0.5s;
+            &:hover {
+                color: $text-green_dark;
+                text-decoration: underline;
+            }
         }
         p:nth-child(2) {
             margin-top: 48px;
