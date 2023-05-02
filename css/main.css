@@ -151,11 +151,11 @@ body {
 }
 
 .f-20_12 {
-  font-size: clamp(12px, 2vw, 20px);
+  font-size: clamp(12px, 1.2vw, 20px);
 }
 
 .f-18_12 {
-  font-size: clamp(12px, 2vw, 18px);
+  font-size: clamp(12px, 1.2vw, 18px);
 }
 
 .f-16_16 {
@@ -228,6 +228,24 @@ footer {
   background-color: #ece8e2;
 }
 
+.br-mb {
+  display: none;
+}
+@media (max-width: 425px) {
+  .br-mb {
+    display: block;
+  }
+}
+
+.br-pc {
+  display: block;
+}
+@media (max-width: 425px) {
+  .br-pc {
+    display: none;
+  }
+}
+
 .text-g-d {
   color: #445744;
 }
@@ -245,7 +263,6 @@ footer {
   background-size: cover;
   position: relative;
   height: 100vh;
-  height: 100dvh;
   display: flex;
   align-items: start;
   justify-content: start;
@@ -279,7 +296,6 @@ footer {
     background-size: cover;
     position: relative;
     height: 100vh;
-    height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -341,7 +357,7 @@ footer {
 
 .introduce {
   position: relative;
-  padding-bottom: 210px;
+  padding-bottom: 110px;
   z-index: 2;
 }
 @media (max-width: 768px) {

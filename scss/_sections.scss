@@ -3,7 +3,6 @@
     background-size: cover;
     position: relative;
     height: 100vh;
-    height: 100dvh;
     display: flex;
     align-items: start;
     justify-content: start;
@@ -31,7 +30,6 @@
         background-size: cover;
         position: relative;
         height: 100vh;
-        height: 100dvh;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -87,7 +85,7 @@
 }
 .introduce {
     position: relative;
-    padding-bottom: 210px;
+    padding-bottom: 110px;
     z-index: 2;
     @include media-768 {
         padding-bottom: 30px;

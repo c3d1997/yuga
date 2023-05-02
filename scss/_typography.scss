@@ -10,10 +10,10 @@ body {
     @include font-size-clamp($mb-f-2, 2vw, $pc-f-2);
 }
 .f-20_12 {
-    @include font-size-clamp($mb-f-3, 2vw, $pc-f-3);
+    @include font-size-clamp($mb-f-3, 1.2vw, $pc-f-3);
 }
 .f-18_12 {
-    @include font-size-clamp($mb-f-4, 2vw, $pc-f-4);
+    @include font-size-clamp($mb-f-4, 1.2vw, $pc-f-4);
 }
 .f-16_16 {
     @include font-size-clamp($mb-f-5, 2vw, $pc-f-5);
