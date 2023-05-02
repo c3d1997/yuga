@@ -54,6 +54,18 @@ footer {
         display: none;
     }
 }
+.img-mb {
+    display: none;
+    @include media-425 {
+        display: block;
+    }
+}
+.img-pc {
+    display: block;
+    @include media-425 {
+        display: none;
+    }
+}
 .text-g-d {
     color: $text-green_dark;
 }

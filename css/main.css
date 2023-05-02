@@ -163,7 +163,7 @@ body {
 }
 
 .f-16_12 {
-  font-size: clamp(12px, 1.2vw, 16px);
+  font-size: clamp(12px, 1.1vw, 16px);
 }
 
 .f-14_12 {
@@ -242,6 +242,24 @@ footer {
 }
 @media (max-width: 425px) {
   .br-pc {
+    display: none;
+  }
+}
+
+.img-mb {
+  display: none;
+}
+@media (max-width: 425px) {
+  .img-mb {
+    display: block;
+  }
+}
+
+.img-pc {
+  display: block;
+}
+@media (max-width: 425px) {
+  .img-pc {
     display: none;
   }
 }
@@ -341,7 +359,13 @@ footer {
   }
 }
 .title__content p {
+  margin-right: -100px;
   line-height: 35px;
+}
+@media (max-width: 940px) {
+  .title__content p {
+    margin-right: 0px;
+  }
 }
 @media (max-width: 768px) {
   .title__content p {

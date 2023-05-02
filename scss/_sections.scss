@@ -72,6 +72,10 @@
             }
         }
         p {
+            margin-right: -100px;
+            @include media-940 {
+                margin-right: 0px;
+            }
             line-height: 35px;
             @include media-768 {
                 line-height: 20px;
