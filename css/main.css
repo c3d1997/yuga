@@ -163,7 +163,7 @@ body {
 }
 
 .f-16_12 {
-  font-size: clamp(12px, 2vw, 16px);
+  font-size: clamp(12px, 1.2vw, 16px);
 }
 
 .f-14_12 {
