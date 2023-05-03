@@ -76,3 +76,11 @@ footer {
 .bg-white {
     background-color: white;
 }
+.mb-text {
+    display: none;
+    text-align: center;
+    margin-top: 6px;
+    @include media-768 {
+        display: block;
+    }
+}

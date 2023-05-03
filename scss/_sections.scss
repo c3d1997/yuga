@@ -83,7 +83,7 @@
         }
     }
     @include media-768 {
-        padding: 50px 30px;
+        padding: 90px 0px;
         margin: 0;
     }
 }
@@ -287,6 +287,8 @@
             }
             img {
                 width: 100%;
+                object-fit: cover;
+                height: 100%;
             }
         }
         &--Two1 {

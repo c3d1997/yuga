@@ -276,6 +276,17 @@ footer {
   background-color: white;
 }
 
+.mb-text {
+  display: none;
+  text-align: center;
+  margin-top: 6px;
+}
+@media (max-width: 768px) {
+  .mb-text {
+    display: block;
+  }
+}
+
 .kv {
   background: url(../images/index_bg.png) no-repeat center;
   background-size: cover;
@@ -374,7 +385,7 @@ footer {
 }
 @media (max-width: 768px) {
   .title {
-    padding: 50px 30px;
+    padding: 90px 0px;
     margin: 0;
   }
 }
@@ -611,6 +622,9 @@ footer {
 }
 .window__imgbox--Two img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 .window__imgbox--Two1 {
   margin-right: 10px;
