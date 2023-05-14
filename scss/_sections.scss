@@ -348,6 +348,9 @@
         }
         p {
             text-align: left;
+            @include media-940 {
+                text-align: center;
+            }
             @include media-768 {
                 text-align: center;
             }
@@ -360,6 +363,9 @@
         width: 100%;
         p {
             text-align: left;
+            @include media-940 {
+                text-align: center;
+            }
             @include media-768 {
                 text-align: center;
             }
@@ -414,7 +420,7 @@
             }
         }
         p {
-            text-align: center;
+            text-align: left;
             @include media-425 {
                 text-align: left;
             }

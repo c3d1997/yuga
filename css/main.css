@@ -699,6 +699,11 @@ footer {
 .explain__left p {
   text-align: left;
 }
+@media (max-width: 940px) {
+  .explain__left p {
+    text-align: center;
+  }
+}
 @media (max-width: 768px) {
   .explain__left p {
     text-align: center;
@@ -714,6 +719,11 @@ footer {
 }
 .explain__right p {
   text-align: left;
+}
+@media (max-width: 940px) {
+  .explain__right p {
+    text-align: center;
+  }
 }
 @media (max-width: 768px) {
   .explain__right p {
@@ -780,7 +790,7 @@ footer {
   }
 }
 .contact__left p {
-  text-align: center;
+  text-align: left;
 }
 @media (max-width: 425px) {
   .contact__left p {
