@@ -44,8 +44,14 @@ footer {
 
 .br-mb {
     display: none;
+
     @include media-425 {
-        display: block;
+        display: unset;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 }
 .br-pc {
@@ -54,6 +60,7 @@ footer {
         display: none;
     }
 }
+
 .img-mb {
     display: none;
     @include media-425 {

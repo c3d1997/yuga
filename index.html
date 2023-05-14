@@ -5,6 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var clientWidth = screen.width;
+
+        var metaTag = document.createElement('meta');
+        metaTag.name = "viewport";
+
+        if (clientWidth <= 376) {
+            metaTag.content = "width=376";
+        } else {
+            metaTag.content = "width=device-width, initial-scale=1.0";
+        }
+
+        document.getElementsByTagName('head')[0].appendChild(metaTag);
+    </script>
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,9 +46,10 @@
                 <div class="title__content">
                     <img class="img-pc" src="images/title.png" alt="">
                     <img class="img-mb" src="images/title_mobil.png" alt="">
-                    <p class="f-16_12 text-g-d">Un sac en tissue de pure soie utilisant des techniques traditionnelles
-                        japonaises telles que la teinture, le tissage,la broderie et la teinture par nouage.
-                    </p>
+                    <p class="f-16_12 text-g-d">Un sac en tissu de pure soie utilisant des techniques<br class="br-mb">
+                        traditionnelles japonaises telles que la teinture, le<br class="br-mb"> tissage, la broderie et
+                        la teinture
+                        par nouage. </p>
                     <p class="f-16_12 text-g-d">Élégant et agréable à utiliser, léger et doux au toucher.</p>
                 </div>
             </div>
@@ -50,9 +65,16 @@
                             <div class="introduce__boxContent--mbimg">
                                 <img src="images/introduce_mb1.png" alt="">
                             </div>
-                            <p class="f-20_12 text-g-d">
-                                Yûga a été fondée par deux<br>Japonaises, Noliko et Maliko, qui<br>souhaitaient faire
-                                découvrir<br> l’élégance et la tradition<br>japonaises en France, et Benoît,<br>un
+                            <p class="f-20_12 text-g-d  br-mb ">
+                                Yûga a été fondée par deux Japonaises, Noliko et Maliko,<br>
+                                qui souhaitaient faire découvrir l’élégance et la tradition<br>
+                                japonaises en France, et Benoît, un Français qui a étudié<br>
+                                le japonais et beaucoup travaillé avec le Japon.<br>
+                            </p>
+                            <p class="f-20_12 text-g-d br-pc">
+                                Yûga a été fondée par deux<br>Japonaises, Noliko et Maliko, <br class="br-pc">qui
+                                souhaitaient faire découvrir<br> l’élégance et la tradition<br>japonaises en France, et
+                                Benoît,<br>un
                                 Français qui a étudié le<br> japonais et qui a aussi beaucoup<br>travaillé avec le
                                 Japon.
                             </p>
@@ -72,7 +94,12 @@
                             <div class="introduce__boxContent--mbimg">
                                 <img src="images/introduce_mb2.png" alt="">
                             </div>
-                            <p class="f-20_12 text-g-d">
+                            <p class="f-20_12 text-g-d  br-mb ">
+                                Tous les produits Yûga sont fabriqués à la main à Kyôto.<br>
+                                Kyôto est l’ancienne capitale du Japon et conserve des<br>
+                                traditions remontant au VIIIe siècle.<br>
+                            </p>
+                            <p class="f-20_12 text-g-d br-pc">
                                 Tous les produits Yûga sont<br>fabriqués à la main à Kyôto. Kyôto<br>est l’ancienne
                                 capitale du<br>Japon et conserve des traditions<br>remontant au VIIIe siècle.
                             </p>
@@ -91,7 +118,14 @@
                             <div class="introduce__boxContent--mbimg">
                                 <img src="images/introduce_mb3.png" alt="">
                             </div>
-                            <p class="f-20_12 text-g-d">
+                            <p class="f-20_12 text-g-d br-mb">
+                                Les foulards de Yûga sont conçus à partir d’un tissu<br>
+                                traditionnel en pure soie de haute qualité de Kyôto.<br>
+                                Au Japon, on l’appelle obiage, phonétiquement <br>
+                                « o bi a gué ». L’obiage sert à monter et à fixer l’obi,<br>
+                                la ceinture d’un kimono.<br>
+                            </p>
+                            <p class="f-20_12 text-g-d br-pc">
                                 L'écharpe de Yûga est conçue à<br>partir d’un tissu traditionnel en<br>pure soie
                                 dehaute qualité de<br>Kyôto. Au Japon, on l’appelle<br>obiage, phonétiquement « o bi
                                 a<br>gué
@@ -113,7 +147,16 @@
                             <div class="introduce__boxContent--mbimg">
                                 <img src="images/introduce_mb2.png" alt="">
                             </div>
-                            <p class="f-20_12 text-g-d">
+                            <p class="f-20_12 text-g-d br-mb">
+                                Bien qu’il s’agisse d’une œuvre d’art merveilleuse qui<br>
+                                a pris du temps, elle est cachée par l’obi et seule une<br>
+                                partie en est visible. Nous avons donc eu envie de<br>
+                                l’utiliser comme foulard ou comme matériau pour<br>
+                                des sacs, afin mettre en valeur sa beauté sous un<br>
+                                angle différent, qui s’adapte aussi aux habitudes<br>
+                                vestimentaires européennes.<br>
+                            </p>
+                            <p class="f-20_12 text-g-d br-pc">
                                 Bien qu’il s’agisse d’une œuvre<br>d’art merveilleuse qui a pris du<br>temps, elle est
                                 cachée
                                 par l’obi<br>et seule une partie en est visible.<br> Nous avons donc eu envie
@@ -126,7 +169,7 @@
                     </div>
                     <div class="introduce__boxImg">
                         <div class="introduce__boxImg--set">
-                            <img src="images/introduce_02.png" alt="">
+                            <img src="images/introduce_04.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -159,7 +202,7 @@
                             </div>
                         </div>
                         <div class="window__content">
-                            <h2 class="f-20_20 text-g-d">Nos écharpes</h2>
+                            <h2 class="f-20_20 text-g-d">NOS FOULARDS</h2>
                             <p class="f-16_16 text-g-l">Longueur entre 130 et 190cm<br>
                                 Largeur entre 15 et 35cm<br>
                                 Largeur entre 40 et 105g</p>
@@ -180,8 +223,8 @@
                             </div>
                         </div>
                         <div class="window__content">
-                            <h2 class="f-20_20 text-g-d">Nos sacs</h2>
-                            <p class="f-16_16 text-g-l">Tous nos sacs sont créés par<br>Noliko, fabriqués à la main
+                            <h2 class="f-20_20 text-g-d">NOS SACS</h2>
+                            <p class="f-16_16 text-g-l">Nos sacs sacs sont créés par<br>Noliko, fabriqués à la main
                                 au<br>Japon
                                 et sont des exemplaires<br>uniques.</p>
                         </div>
@@ -201,10 +244,9 @@
                             </div>
                         </div>
                         <div class="window__content">
-                            <h2 class="f-20_20 text-g-d">Nos écharpes</h2>
+                            <h2 class="f-20_20 text-g-d">NOS PETITS ACCESSOIRES</h2>
                             <p class="f-16_16 text-g-l">Les porte bijoux brodés, les<br> mouchoirs en double gaze<br>
-                                brodés, les
-                                porcelaines Koimari,<br> etc.,</p>
+                                brodés, les porcelaines...</p>
                         </div>
                     </div>
                 </div>
@@ -220,17 +262,22 @@
                 <div class="explain__left">
                     <h2 class="f-30_20 text-g-d">LA VOIE DU THÉ</h2>
                     <img src="images/subtitle_2.png" alt="">
-                    <p class="f-18_12 text-g-l">Maliko 宗利 organise régulièrement des Chakai, traduit<br>souvent par «
-                        cérémonie
-                        du thé ». Mais il
-                        s’agit plus<br>d’une rencontre autour du thé, pour introduire la<br> tradition japonaise. Venez
-                        découvrir un aspect<br> incontournable de la culture japonaise.</p>
+                    <p class="f-18_12 text-g-l">Maliko <img class=" explain__left--img" src="./images/jonli.png" alt="">
+                        organise régulièrement des
+                        Chakai, mot <br class="br-pc"><br class="br-mb">
+                        traduit souvent par « cérémonie du thé ». Mais il<br class="br-mb"> s’agit plus<br
+                            class="br-pc">
+                        d’une rencontre autour du thé, pour<br class="br-mb"> introduire la<br class="br-pc">
+                        tradition japonaise. Venez découvrir un<br class="br-mb"> aspect<br class="br-pc">
+                        incontournable de la culture japonaise.</p>
+
                 </div>
                 <div class="explain__right">
                     <p class="f-18_12 text-g-l">Prochaines dates et lieux de Chakai<br>
                         <a href="https://www.confucius-bretagne.org/project/fete-du-the-lundi-29-mai-2023/">Le lundi 29
-                            mai, la fête du thé 2023 au Parc de Maurepas à Rennes (35)</a><br>
-                        <a href="https://www.obi-jardin.fr/">Le 03 et 04 juin, Rendez-vous aux jardins en Bretagne 2023
+                            mai, la fête du thé 2023 au Parc de<br class="br-mb"> Maurepas à Rennes (35)</a><br>
+                        <a href="https://www.obi-jardin.fr/">Le 03 et 04 juin, Rendez-vous aux jardins en Bretagne<br
+                                class="br-mb"> 2023
                             à Tréguier (22)</a><br>
                         <a href="https://www.obi-jardin.fr/">Les 26 et 27 août, les 2 et 3 septembre à Tréguier (22)</a>
                         <br>
@@ -238,8 +285,7 @@
                             à Tréguier (22)</a>
                     </p>
                     <p class="f-18_12 text-g-l">
-                        Les produits Yûga seront vendus en mains propres<br class="br-mb">par Benoît<br class="br-pc">
-                        après la séance
+                        Les produits Yûga seront vendus en mains propres par Benoît<br class="br-pc"> après la séance
                         Chakai.
                     </p>
                 </div>
@@ -249,16 +295,16 @@
         <section class="container bg-white">
             <div class="contact ">
                 <div class="contact__left">
-                    <h2 class="f-30_20">CONTACT</h2>
+                    <h2 class="f-30_20 text-g-d ">CONTACT</h2>
                     <img src="images/subtitle_3.png" alt="">
-                    <p class="f-14_12">
+                    <p class="f-14_12 text-g-d ">
                         SARL Yûga<br>
                         Adresse : 12 Avenue de Belle-Île, 35530 Noyal-sur-Vilaine, France<br>
                         Email : benoit@yuuga.fr, maliko@yuuga.fr (en japonais)<br>
                         Téléphone : +33 7 68 69 34 82<br>
                         Site : www.yuuga.fr</p>
-                    <p class="f-14_12">
-                        Gérant<br>
+                    <p class="f-14_12 text-g-d ">
+                        Gérants<br>
                         Benoît ARMANGE<br>
                         Maliko OKA<br>
                         Noliko Masukura
