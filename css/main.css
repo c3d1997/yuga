@@ -697,7 +697,12 @@ footer {
   margin-bottom: 50px;
 }
 .explain__left p {
-  text-align: center;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .explain__left p {
+    text-align: center;
+  }
 }
 @media (max-width: 425px) {
   .explain__left p {
@@ -708,7 +713,12 @@ footer {
   width: 100%;
 }
 .explain__right p {
-  text-align: center;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .explain__right p {
+    text-align: center;
+  }
 }
 @media (max-width: 425px) {
   .explain__right p {
